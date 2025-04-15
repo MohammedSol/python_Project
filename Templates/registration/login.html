@@ -3,7 +3,8 @@
 
 <head>
     <title>Slide Navbar</title>
-    <link rel="stylesheet" href="{% static 'salle_reservation\static\CSS\login.css' %}">
+    {% load static %} <!--it's fix the 'static' error -->
+    <link rel="stylesheet" href="{% static 'CSS/login.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
 
