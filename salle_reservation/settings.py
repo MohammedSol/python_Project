@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'salle_reservation.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'reservation_py',
+        'USER':'root', 
+        'PASSWORD': '',   
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
