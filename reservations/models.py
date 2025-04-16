@@ -24,7 +24,7 @@ class Reservation(models.Model):
     salle = models.ForeignKey(Salle, on_delete=models.CASCADE)
     date = models.DateField()
     heure_debut = models.TimeField()
-    heure_fin = models.TimeField()
+    heure_fin = models.TimeField(null=True, blank=True)
     motif = models.TextField()
     statut = models.CharField(max_length=20, choices=STATUT_CHOICES, default='en_attente')
     date_creation = models.DateTimeField(auto_now_add=True)
